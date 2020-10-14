@@ -4,7 +4,7 @@ import java.util.stream.IntStream;
 
 public class Arrays4 {
     public static void main(String[] args) {
-        System.out.println("===================== Arrays 5 ======================");
+        System.out.println("===================== Arrays 4 ======================");
         int [] numbers = new int[]{3, 4, 2, 23, 133, 1, -3};
         Arrays.sort(numbers);
         System.out.println(Arrays.toString(numbers));
@@ -89,8 +89,21 @@ public class Arrays4 {
         System.out.println(Arrays.toString(primitiveArray));
         Integer [] boxedArray = Arrays.stream(primitiveArray).boxed().toArray(Integer[]:: new);
         System.out.println(Arrays.toString(boxedArray));
+        // Converting from Double to double
         Double [] boxedArray2 = {33.2, 2.34, 5.32, 53.5, 6.52, 23.4, 0.243};
         System.out.println(Arrays.toString(boxedArray2));
+        double [] primitiveArray2 = Arrays.stream(boxedArray2).mapToDouble(Double::doubleValue).toArray();
+        System.out.println(Arrays.toString(primitiveArray2));
+        // Another way of doing this conversion is through the use of a for loop in which each element is autoboxed one after the other
+        long [] primitiveArray3 = {234L, 342L, 23424, 23424};
+        Long [] boxedArray3 = new Long[primitiveArray3.length];
+        for (int i = 0; i < boxedArray3.length; i++){
+            boxedArray3[i] = primitiveArray3[i]; // Autoboxing happens here for each element;
+        }
+        System.out.println(Arrays.toString(primitiveArray3));
+        System.out.println(Arrays.toString(boxedArray3));
+
+
 
 
     }
