@@ -28,8 +28,4 @@
 /nbdist/
 /.nb-gradle/
 
-vela-portal.json
-/config/application.properties
-/config/.env
-/config/vela-portal.json
-!/config/*.example
+*.class
