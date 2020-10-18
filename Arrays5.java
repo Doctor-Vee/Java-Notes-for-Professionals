@@ -63,7 +63,6 @@ public class Arrays5 {
         Double [] integers = {2.0, 3.0, 5.0};
         Number [] numbers = Arrays.copyOf(integers, integers.length, Number[].class);
         System.out.println(Arrays.toString(numbers));
-
     }
 
     public static double[] castArray(double[] target, int[] array){
