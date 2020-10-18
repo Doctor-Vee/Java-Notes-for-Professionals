@@ -29,3 +29,4 @@
 /.nb-gradle/
 
 *.class
+/out/production/javanotesforprofessionals/
