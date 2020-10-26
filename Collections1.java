@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Collections1 {
     public static void main(String[] args) {
-        System.out.println("===================== Collections ======================");
+        System.out.println("===================== Collections 1 ======================");
 
         System.out.println("--------- Removing items from a List within a Loop ---------");
         List<String> fruits = new ArrayList<>();
