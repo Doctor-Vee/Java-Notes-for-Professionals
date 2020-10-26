@@ -44,6 +44,37 @@ public class ListClass {
         List<String> strings = numbers.stream().map(Objects::toString).collect(Collectors.toList());
         System.out.println(strings);
 
+        System.out.println("--------- Finding common elements between 2 lists ----------");
+        List<String> multiplesOf2 = Arrays.asList("two", "four", "six", "eight", "ten", "twelve");
+        List<String> multiplesOf4 = Arrays.asList("four", "eight", "twelve", "sixteen", "twenty");
+        List<String> commonMultiples = new ArrayList<>();
+        commonMultiples.addAll(multiplesOf2);
+        commonMultiples.retainAll(multiplesOf4);
+        System.out.println(commonMultiples);
+
+        System.out.println("---------------------------- Reversing a list ----------------------------");
+        System.out.println(multiplesOf2);
+        Collections.reverse(multiplesOf2);
+        System.out.println(multiplesOf2);
+
+        System.out.println("------------------ Adding or removing elements -------------------");
+        // you can add or remove elements from an arraylist and you can also do these at a particular index ...
+        System.out.println(commonMultiples);
+        commonMultiples.remove("twelve");
+        System.out.println(commonMultiples);
+        commonMultiples.add(1, "six");
+        System.out.println(commonMultiples);
+        List<String> evenNumbers = new ArrayList<>();
+        evenNumbers.addAll(commonMultiples);
+        evenNumbers.add(0, "two");
+        Collections.addAll(evenNumbers,  "ten", "twelve", "fourteen");
+        System.out.println(evenNumbers);
+        evenNumbers.addAll(multiplesOf2);
+        System.out.println(evenNumbers);
+        System.out.println(multiplesOf4);
+        evenNumbers.removeAll(multiplesOf4);
+        System.out.println(evenNumbers);
+
 
     }
 }
