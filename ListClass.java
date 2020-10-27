@@ -74,7 +74,8 @@ public class ListClass {
         System.out.println(multiplesOf4);
         evenNumbers.removeAll(multiplesOf4);
         System.out.println(evenNumbers);
-
+        Collections.sort(evenNumbers);
+        System.out.println(evenNumbers);
 
     }
 }
