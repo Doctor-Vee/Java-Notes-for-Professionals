@@ -17,13 +17,21 @@ public class Collections1 {
         System.out.println(fruits);
 
         /*
-        // This throws an exception because we're iterating over the collection and modifying it at the same time
+        // This throws an exception because we're using the enhanced for loop to iterate through it and modifying it at the same time
         for(String fruit: fruits){
             if(fruit.equals("Banana")){
             fruits.remove(fruit);
             }
         }
          */
+
+        System.out.println(fruits);
+        for (int i = 0; i<fruits.size(); i++){
+            if("Banana".equals(fruits.get(i))){
+                fruits.remove(i);
+            }
+        }
+        System.out.println(fruits);
 
         // Using Iterator
         Iterator<String> fruitIterator = fruits.iterator();
