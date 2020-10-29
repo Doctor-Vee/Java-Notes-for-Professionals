@@ -13,11 +13,22 @@ public class Employee extends Person {
 
     private String gender;
 
+    public Employee(int age, String name) {
+        super(age, name);
+    }
+
     public String getGender() {
         return gender;
     }
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
