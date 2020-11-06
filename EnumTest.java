@@ -15,8 +15,16 @@ public class EnumTest {
             System.out.println(c.name() + " --> " + c.ordinal());
         }
 
+        System.out.println("----------------------- Comparing enums ----------------------");
         System.out.println(PrimaryColour.RED == PrimaryColour.YELLOW);
         System.out.println(PrimaryColour.BLUE == PrimaryColour.BLUE);
+
+        System.out.println("------------------ Enums with constructors --------------------");
+        // An enum cannot have a public constructor; however, private constructors are acceptable
+        // You can check out the Coin enum and see its private constructor
+        boolean theTruth = Coin.PENNY.isCopperColoured();
+        System.out.println(theTruth);
+
 
     }
 
