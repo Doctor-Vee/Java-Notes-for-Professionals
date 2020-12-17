@@ -104,12 +104,12 @@ public class DateClass {
         calendar3.set(1992, Calendar.AUGUST, 17);
         Date myBirthDate = calendar3.getTime();
 
-        System.out.printf("Is %1$tF before %2$tF? %3$b%n", today1, birthdate, Boolean.valueOf(today1.after(birthdate)));
-        System.out.printf("Is %1$tF before %2$tF? %3$b%n", today1, today1, Boolean.valueOf(today1.equals(today1)));
-        System.out.printf("Is %1$tF before %2$tF? %3$b%n", birthdate, samebirthdate, Boolean.valueOf(birthdate.before(samebirthdate)));
-        System.out.printf("Compare %1$tF to %2$tF ===> %3$d%n", myBirthDate, myBirthDate, Integer.valueOf(myBirthDate.compareTo(myBirthDate)));
-        System.out.printf("Compare %1$tF to %2$tF ===> %3$d%n", birthdate, myBirthDate, Integer.valueOf(birthdate.compareTo(myBirthDate)));
-        System.out.printf("Compare %1$tF to %2$tF ===> %3$d%n", myBirthDate, birthdate, Integer.valueOf(myBirthDate.compareTo(birthdate)));
+        System.out.printf("Is %1$tF before %2$tF? %3$b%n", today1, birthdate, today1.after(birthdate));
+        System.out.printf("Is %1$tF before %2$tF? %3$b%n", today1, today1, today1.equals(today1));
+        System.out.printf("Is %1$tF before %2$tF? %3$b%n", birthdate, samebirthdate, birthdate.before(samebirthdate));
+        System.out.printf("Compare %1$tF to %2$tF ===> %3$d%n", myBirthDate, myBirthDate, myBirthDate.compareTo(myBirthDate));
+        System.out.printf("Compare %1$tF to %2$tF ===> %3$d%n", birthdate, myBirthDate, birthdate.compareTo(myBirthDate));
+        System.out.printf("Compare %1$tF to %2$tF ===> %3$d%n", myBirthDate, birthdate, myBirthDate.compareTo(birthdate));
 
         // Same thing applies to LocalDate except that for that case, we use isBefore, isAfter for the before and after respectively
 // Also, for LocalDate, "equals" method checks if the parameter reference equals the date first whereas "isEqual" directly calls compareTo0.
