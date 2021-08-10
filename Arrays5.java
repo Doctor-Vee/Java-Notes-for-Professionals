@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class Arrays5Replacement {
+public class Arrays5 {
     public static void main(String[] args) {
         System.out.println("===================== Arrays 5 ======================");
         System.out.println("------------- Removing an element from an array -------------");

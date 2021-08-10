@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.stream.IntStream;
 
-public class Arrays4Replacement {
+public class Arrays4 {
     public static void main(String[] args) {
         System.out.println("===================== Arrays 4 ======================");
         int [] numbers = new int[]{3, 4, 2, 23, 133, 1, -3};
