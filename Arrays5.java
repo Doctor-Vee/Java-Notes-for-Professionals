@@ -69,7 +69,7 @@ public class Arrays5 {
         }
         System.out.println("Colour index 5: " + colourIndex5);
 
-        System.out.println("----------- Testing if an array contains an element -----------");
+        System.out.println("----------- Testing if an array contains a given element -----------");
         boolean blueIsPresent = Arrays.asList(colours).contains("Blue");
         boolean yellowIsPresent = Arrays.asList(colours).contains("Yellow");
         System.out.println("Blue is present: " + blueIsPresent);
