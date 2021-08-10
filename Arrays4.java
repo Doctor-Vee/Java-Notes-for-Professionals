@@ -13,6 +13,7 @@ public class Arrays4 {
                 {1},
                 {1, 2}
         };
+        //
 //        System.out.println(table2[0][2]); // Null pointer exception
 //        System.out.println(table2[1][0]); // Index Out of Bounds Exception
         System.out.println(table2[3][1]); // 2
