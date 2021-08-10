@@ -9,8 +9,9 @@ public class DatesAndTime {
         System.out.println("------------ Difference Between 2 Local Dates ---------------");
         LocalDate d1 = LocalDate.of(1992, 8, 17);
         LocalDate d2 = LocalDate.of(1996, 1, 23);
-        System.out.println(String.format("Days between %s and %s = %s days", d1, d2, ChronoUnit.DAYS.between(d1, d2)));
-        System.out.println(String.format("Months between %s and %s = %s months", d1, d2, ChronoUnit.MONTHS.between(d1, d2)));
+        System.out.printf("Days between %s and %s = %s days%n", d1, d2, ChronoUnit.DAYS.between(d1, d2));
+        System.out.printf("Months between %s and %s = %s months%n", d1, d2, ChronoUnit.MONTHS.between(d1, d2));
+
 
         // Date and time with Zone information
         System.out.println("----------- Date and Time with Zone Information ---------------");
