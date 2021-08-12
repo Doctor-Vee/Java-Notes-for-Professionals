@@ -3,11 +3,11 @@ package code_signal_algorithms;
 import java.util.HashSet;
 
 /**
- * I didn't note down the question ... I had solved this algorithm before I came up with the idea of recording my answers here
- * But basically, the task expects you to be able to find the first duplicate in a given arrary
- * Example:
- * Given an array [2, 1, 3, 5, 3, 2], your function should return 3.
- * 3 and 2 are duplicates in this case but the duplicate that comes up first is 3.
+ * Codewriting
+ *
+ * 1000
+ *
+ * Given an array a that contains only numbers in the range from 1 to a.length, find the first duplicate number for which the second occurrence has the minimal index. In other words, if there are more than 1 duplicated numbers, return the number for which the second occurrence has a smaller index than the second occurrence of the other number does. If there are no such elements, return -1.
  */
 public class FirstDuplicate {
     public static void main(String[] args) {
