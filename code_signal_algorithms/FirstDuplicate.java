@@ -11,7 +11,7 @@ import java.util.HashSet;
  */
 public class FirstDuplicate {
     public static void main(String[] args) {
-        int[] array = new int[]{2, 1, 3, 5, 3, 2};
+        int[] array = new int[]{2, 5, 1, 3, 5, 3, 2};
         System.out.println(firstDuplicate(array));
     }
 

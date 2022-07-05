@@ -12,7 +12,7 @@ public class BigIntegerClass {
         BigInteger valueFromBinaryString = new BigInteger(binaryString, binaryRadix);
         System.out.println(valueFromBinaryString);
 
-        BigInteger attic = BigInteger.TWO;
+        BigInteger attic = BigInteger.TEN;
         System.out.println(attic);
 
         // Just like BigDecimal, BigInteger has the following methods: add, subtract, multiply, divide, pow, remainder
